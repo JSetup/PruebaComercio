@@ -1,0 +1,260 @@
+/*RESPONSIVE*/
+@media (max-width: 472px){  
+	.ayuda img{
+		height: 20px;
+		width: 20px;
+		
+	}
+	.ayuda{
+		margin-right: 9px !important ;
+		height: 40px !important;
+		width: 40px !important;
+		padding: 9px 9px !important;
+	}
+	body{
+		font-size: 14px !important;
+	}
+	.box-help{
+		right: unset !important;
+		margin: 0 auto;
+		position: relative !important;
+	}
+	.mirror-nums{
+		width: 50vw !important;
+		left: 25vw !important;
+	}
+}
+/*fIN DE RESPONSIVE*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+}
+.img-background{
+	position: fixed;
+	width: 100%;
+	background-color: #f4cf0c;
+}
+.ayuda{
+	float: right;
+	border: 1px solid #bbbaba;
+	padding: 13px 21px;
+	margin-top: 9px;
+	margin-right: 20px;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	background-color: #e1e1e1;
+	animation: 1.3s pulse infinite linear;
+	cursor: pointer;
+
+}
+.box-help{
+	display: table;
+	width: 300px;
+	transition-duration: 1s;
+	position: absolute;
+	z-index: 3;
+	right: 100px;
+	top: -371px;
+	border-radius: 0 0 10px 10px;
+	color: #fff;
+}
+
+.title-help{
+	margin-bottom: 10px; 
+}
+.cont-des{
+	padding: 15px;
+}
+.des-help{
+	text-align: justify;
+	line-height: 30px;
+	padding: 3px;
+}
+
+.content{
+	position: absolute;
+	margin: 0 auto;
+	top: 35%;
+	width: 100%;
+
+}
+
+section{
+	width: 69vw !important;
+	margin: 0 auto;
+}
+.marco{
+	background-color: #ffffff;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    box-shadow: 0 15px 46px rgba(26, 26, 29, 0.3), 0 15px 90px rgba(0, 0, 0, 0.2) !important
+}
+.marco-in{
+	z-index: 9999;
+	position: relative;
+	animation: 1.3s pulse 1 linear;
+}
+/*ANIMACION PARA HELP E INPUT*/
+@keyframes pulse{
+	0%{
+		/*left: -15px;*/
+		transform: scale3d(1,1,1);
+		-webkit-transform: scale3d(1,1,1);
+	}
+	50% {
+		transform: scale3d(1.05,1.05,1.05);
+		box-shadow: 0px 1px 21px 0px;
+	}
+	100%{
+		transform: scale3d(1,1,1);
+		-webkit-transform: scale3d(1,1,1);
+	}
+}
+/*fIN DE ANIMACION*/
+
+.contenido-marco{
+    width: 100%;
+    vertical-align: middle;
+}
+.cont-numeral{
+	display: table-cell;
+	padding: 20px;
+    width: 62px;
+}
+.over-input{
+	display: table-cell ;
+
+    vertical-align: middle ;
+    width: 100% ;
+}
+.cont-input{
+	width: 100% !important;
+	padding-right: 20px;
+}
+.input-integrado{
+	background-color: transparent;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-overflow: ellipsis;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+.input-integrado:focus{
+	outline: none;
+	padding-right: 40px;
+	
+}
+.btn{
+	padding: 6px 12px;
+	border-radius: 4px;
+	border:1px solid #000;
+	cursor: pointer;
+    font-size: 22px;
+}
+.btn-info{
+	background-color: rgba(75, 209, 165, 0.86);
+	margin: 30px auto;
+	display: table;
+	border-color: #0fb09e;
+	color: #fff;
+}
+.cont-btn{
+	width: 100%;
+
+}
+.backdrop{
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+	opacity: 0.5;
+}
+.mirror-nums{
+	width: 29vw;
+    margin: 0px auto;
+    position: absolute;
+    top: 75% !important;
+    left: 36vw;
+    text-align: center;
+    display: none;
+}
+
+/*ESTILOS PARA Caja de resultado de numeros ordenados*/
+#numsOrdenados{
+	display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 25px;
+}
+/*fIN DE ESTILOS DE LA CAJA DE RESULTADOS*/
+
+
+
+/*Animacion para botom ayuda*/
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 6px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+}
+/*fin de Animacion para botom ayuda*/

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>|Prueba Comercio</title>
+	<meta charset="utf-8">
+	<meta name="title" content="Grupo El Comercio">
+	<meta name="description" content="Conglomerado de medios de comunicación peruano, que administra varios periódicos y canales de televisión y también entre otros negocios.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="favicon.png" />
+</head>
+<body>
+	<div class="img-background">
+		<img src="imgs/back-numbers3.png">
+	</div>
+
+
+<nav>
+	<div id="ayuda" class="ayuda hvr-ripple-out">
+		<img src="imgs/help_icon.png" alt="Ayuda" title="Ayuda">
+	</div>
+	<div id="modal-help" class="box-help">
+		<div class="cont-des">
+			<div class="title-help"><h4>Ayuda</h4></div>
+			<hr>
+			<div class="des-help">
+				<p>En esta aplicación web debemos escribir solo números y presionar enter para guardarlos, no se podra guardar cuando la caja este vacía, al concluir pulsar el botom ordenar y nos arrojará el conjunto de números ordenados de manera ascendente.</p>
+			</div>
+		</div>
+	</div>
+</nav>
+
+
+<div class="content">
+	<section>
+		<div class="marco">
+			<div class="contenido-marco">
+				<div class="cont-numeral">
+					<img src="imgs/numeral.svg" height="22" width="22">
+				</div>
+				<div class="over-input">
+					<div class="cont-input">
+						<form>
+							<input type="text" name="numeros" placeholder="Escriba números" id="numeros" class="input-integrado">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="btn btn-info" id="accion">Ordenar</div>
+		</div>
+	</section>
+</div>
+
+<div class="mirror-nums">
+	<div id="numsOrdenados"></div>
+</div>
+
+
+</body>
+<script type="text/javascript" src="js/jquery-1.6.3.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
