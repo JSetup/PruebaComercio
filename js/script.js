@@ -71,7 +71,7 @@ $(document).ready(function(){
 	function animacionInputFocus(){
 		$(".content").append('<div class="backdrop"></div>');
 		$(".marco").addClass('marco-in');
-		$(".img-background").css('filter', 'blur(6px)');
+		$(".img-background").css('filter', 'blur(9px)');
 	}
 
 	/*Hace la animación para mostrar el modal de ayuda*/
